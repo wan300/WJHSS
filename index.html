@@ -1,783 +1,593 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>
-   World Journal of High School Students
+    World Journal of Young and Excellent Scholars
   </title>
-  <link href="https://ojs.bonviewpress.com/public/journals/4/favicon_en_US.png" rel="icon"/>
-  <meta content="Open Journal Systems 3.4.0.7" name="generator"/>
-  <link href="https://ojs.bonviewpress.com/index.php/JCCE/gateway/plugin/WebFeedGatewayPlugin/atom" rel="alternate" type="application/atom+xml"/>
-  <link href="https://ojs.bonviewpress.com/index.php/JCCE/gateway/plugin/WebFeedGatewayPlugin/rss" rel="alternate" type="application/rdf+xml"/>
-  <link href="https://ojs.bonviewpress.com/index.php/JCCE/gateway/plugin/WebFeedGatewayPlugin/rss2" rel="alternate" type="application/rss+xml"/>
-  <link href="https://ojs.bonviewpress.com/index.php/JCCE/$$$call$$$/page/page/css?name=stylesheet" rel="stylesheet" type="text/css">
-   <link href="https://ojs.bonviewpress.com/index.php/JCCE/$$$call$$$/page/page/css?name=font" rel="stylesheet" type="text/css">
-    <link href="https://ojs.bonviewpress.com/lib/pkp/styles/fontawesome/fontawesome.css?v=3.4.0.7" rel="stylesheet" type="text/css">
-     <style type="text/css">
-      .pkp_structure_head { background: center / cover no-repeat url("https://ojs.bonviewpress.com/public/journals/4/homepageImage_en_US.png");}
-     </style>
-     <link href="https://ojs.bonviewpress.com/plugins/generic/doiInSummary/styles/doi.css?v=3.4.0.7" rel="stylesheet" type="text/css">
-      <link href="https://ojs.bonviewpress.com/plugins/generic/orcidProfile/css/orcidProfile.css?v=3.4.0.7" rel="stylesheet" type="text/css"/>
-      <link href="https://ojs.bonviewpress.com/public/journals/4/styleSheet.css?d=2023-02-03+10%3A29%3A10" rel="stylesheet" type="text/css"/>
-     </link>
-    </link>
-   </link>
+  <link href="https://ojs.bonviewpress.com/public/journals/4/favicon_en_US.png" rel="icon" />
+  <meta content="Open Journal Systems 3.4.0.7" name="generator" />
+  <link href="https://ojs.bonviewpress.com/index.php/JCCE/gateway/plugin/WebFeedGatewayPlugin/atom" rel="alternate"
+    type="application/atom+xml" />
+  <link href="https://ojs.bonviewpress.com/index.php/JCCE/gateway/plugin/WebFeedGatewayPlugin/rss" rel="alternate"
+    type="application/rdf+xml" />
+  <link href="https://ojs.bonviewpress.com/index.php/JCCE/gateway/plugin/WebFeedGatewayPlugin/rss2" rel="alternate"
+    type="application/rss+xml" />
+  <link href="https://ojs.bonviewpress.com/index.php/JCCE/$$$call$$$/page/page/css?name=stylesheet" rel="stylesheet"
+    type="text/css">
+  <link href="https://ojs.bonviewpress.com/index.php/JCCE/$$$call$$$/page/page/css?name=font" rel="stylesheet"
+    type="text/css">
+  <link href="https://ojs.bonviewpress.com/lib/pkp/styles/fontawesome/fontawesome.css?v=3.4.0.7" rel="stylesheet"
+    type="text/css">
+  <style type="text/css">
+    .pkp_structure_head {
+      background: center / cover no-repeat url("https://ojs.bonviewpress.com/public/journals/4/homepageImage_en_US.png");
+    }
+  </style>
+  <link href="https://ojs.bonviewpress.com/plugins/generic/doiInSummary/styles/doi.css?v=3.4.0.7" rel="stylesheet"
+    type="text/css">
+  <link href="https://ojs.bonviewpress.com/plugins/generic/orcidProfile/css/orcidProfile.css?v=3.4.0.7" rel="stylesheet"
+    type="text/css" />
+  <link href="https://ojs.bonviewpress.com/public/journals/4/styleSheet.css?d=2023-02-03+10%3A29%3A10" rel="stylesheet"
+    type="text/css" />
   </link>
- </head>
- <body class="pkp_page_index pkp_op_index" dir="ltr">
+  </link>
+  </link>
+  </link>
+  <style>
+    /* 使用更具体的选择器来提高优先级，并用 !important 强制执行 */
+    .current_issue a.read_more::after {
+      content: " \00BB" !important;
+      /* \00BB 是字符 » */
+      font-family: sans-serif !important;
+      /* 强制使用标准字体，这是关键！*/
+      font-weight: bold !important;
+    }
+  </style>
+  <style>
+    /* 放大文章列表的字号 */
+    .cmp_article_list.articles li div {
+      font-size: 1.1em !important;
+      /* 稍微放大字体 */
+    }
+  </style>
+  <style>
+    /* 仅放大 "Make a Submission" 按钮，不改变其原始外观 */
+    .block_make_submission_link {
+      display: block !important;
+      /* 让链接元素可以撑开，以便应用内外边距 */
+      text-align: center !important;
+      /* 如果原始是居中的，保持居中 */
+      font-size: 1.3em !important;
+      /* 将字体大小放大到原来的1.5倍 */
+      padding-top: 10px !important;
+      /* 增加顶部和底部的可点击区域 */
+      padding-bottom: 10px !important;
+      line-height: 1.5 !important;
+      /* 增加行高以确保文字垂直居中 */
+    }
+  </style>
+</head>
+
+<body class="pkp_page_index pkp_op_index" dir="ltr">
   <div class="pkp_structure_page">
-   <header class="pkp_structure_head" id="headerNavigationContainer" role="banner">
-    <nav aria-label="Jump to content links" class="cmp_skip_to_content">
-     <a href="#pkp_content_main">
-      Skip to main content
-     </a>
-     <a href="#siteNav">
-      Skip to main navigation menu
-     </a>
-     <a href="#homepageAbout">
-      Skip to about the journal
-     </a>
-     <a href="#homepageIssue">
-      Skip to the current issue
-     </a>
-     <a href="#pkp_content_footer">
-      Skip to site footer
-     </a>
-    </nav>
-    <div class="pkp_head_wrapper">
-     <div class="pkp_site_name_wrapper">
-      <button class="pkp_site_nav_toggle">
-       <span>
-        Open Menu
-       </span>
-      </button>
-      <h1 class="pkp_screen_reader">
-      World Journal of High School Students
-      </h1>
-      <div class="pkp_site_name">
-       <a class="is_text" href="						https://wan300.github.io/WJHSS/
-					">
-        World Journal of High School Students
-       </a>
-      </div>
-     </div>
-     <nav aria-label="Site Navigation" class="pkp_site_nav_menu">
-      <a id="siteNav">
-      </a>
-      <div class="pkp_navigation_primary_row">
-       <div class="pkp_navigation_primary_wrapper">
-        <ul class="pkp_navigation_primary pkp_nav_list" id="navigationPrimary">
-         <li class="">
-          <a href="http://ojs.bonviewpress.com/index.php/JCCE/index">
-           HOME
-          </a>
-         </li>
-         <li class="">
-          <a href="https://ojs.bonviewpress.com/index.php/JCCE/about">
-           ABOUT
-          </a>
-          <ul>
-           <li class="">
-            <a href="https://ojs.bonviewpress.com/index.php/JCCE/aims_and_scope">
-             Aims and Scope
-            </a>
-           </li>
-           <li class="">
-            <a href="https://ojs.bonviewpress.com/index.php/JCCE/JM">
-             Journal Metrics
-            </a>
-           </li>
-           <li class="">
-            <a href="https://ojs.bonviewpress.com/index.php/JCCE/indexing">
-             Indexing &amp; Abstracting
-            </a>
-           </li>
-           <li class="">
-            <a href="https://ojs.bonviewpress.com/index.php/JCCE/about/privacy">
-             Privacy Statement
-            </a>
-           </li>
-           <li class="">
-            <a href="https://ojs.bonviewpress.com/index.php/JCCE/contact">
-             Contact Us
-            </a>
-           </li>
-          </ul>
-         </li>
-         <li class="">
-          <a href="https://ojs.bonviewpress.com/index.php/JCCE/browse">
-           BROWSE
-          </a>
-          <ul>
-           <li class="">
-            <a href="https://ojs.bonviewpress.com/index.php/JCCE/issue/view/onlinefirst">
-             Online First
-            </a>
-           </li>
-           <li class="">
-            <a href="https://ojs.bonviewpress.com/index.php/JCCE/issue/current">
-             Current Issue
-            </a>
-           </li>
-           <li class="">
-            <a href="https://ojs.bonviewpress.com/index.php/JCCE/issue/archive">
-             All Issues
-            </a>
-           </li>
-          </ul>
-         </li>
-         <li class="">
-          <a href="https://ojs.bonviewpress.com/index.php/JCCE/contribute">
-           CONTRIBUTE
-          </a>
-          <ul>
-           <li class="">
-            <a href="https://ojs.bonviewpress.com/index.php/JCCE/about/submissions">
-             Author Guidelines
-            </a>
-           </li>
-           <li class="">
-            <a href="https://ojs.bonviewpress.com/index.php/JCCE/OA">
-             Open Access
-            </a>
-           </li>
-           <li class="">
-            <a href="https://ojs.bonviewpress.com/index.php/JCCE/APC">
-             Article Processing Charge
-            </a>
-           </li>
-           <li class="">
-            <a href="https://ojs.bonviewpress.com/index.php/JCCE/peer_review_process">
-             Peer Review Process
-            </a>
-           </li>
-           <li class="">
-            <a href="https://ojs.bonviewpress.com/index.php/JCCE/pe">
-             Publishing Ethics
-            </a>
-           </li>
-           <li class="">
-            <a href="https://ojs.bonviewpress.com/index.php/JCCE/for_reviewers">
-             For Reviewers
-            </a>
-           </li>
-          </ul>
-         </li>
-         <li class="">
-          <a href="https://ojs.bonviewpress.com/index.php/JCCE/EBMembers">
-           EDITORIAL BOARD
-          </a>
-         </li>
-         <li class="">
-          <a href="https://ojs.bonviewpress.com/index.php/JCCE/special_issues">
-           SPECIAL ISSUES
-          </a>
-          <ul>
-           <li class="">
-            <a href="https://ojs.bonviewpress.com/index.php/JCCE/submittingproposal">
-             Submitting a Proposal
-            </a>
-           </li>
-          </ul>
-         </li>
-        </ul>
-        <div class="pkp_navigation_search_wrapper">
-         <a class="pkp_search pkp_search_desktop" href="https://ojs.bonviewpress.com/index.php/index/search">
-          <span aria-hidden="true" class="fa fa-search">
-          </span>
-          Search
-         </a>
-        </div>
-       </div>
-      </div>
-      <div class="pkp_navigation_user_wrapper" id="navigationUserWrapper">
-       <ul class="pkp_navigation_user pkp_nav_list" id="navigationUser">
-        <li class="profile">
-         <a href="https://ojs.bonviewpress.com/index.php/JCCE/user/register">
-          Register
-         </a>
-        </li>
-        <li class="profile">
-         <a href="https://ojs.bonviewpress.com/index.php/JCCE/browse">
-          BROWSE
-         </a>
-        </li>
-        <li class="profile">
-         <a href="https://ojs.bonviewpress.com/index.php/JCCE/login">
-          Login
-         </a>
-        </li>
-       </ul>
-      </div>
-     </nav>
-    </div>
-    <!-- .pkp_head_wrapper -->
-   </header>
-   <!-- .pkp_structure_head -->
-   <div class="pkp_structure_content has_sidebar">
-    <div class="pkp_structure_main" role="main">
-     <a id="pkp_content_main">
-     </a>
-     <div class="page_index_journal">
-      <section class="homepage_about">
-       <a id="homepageAbout">
-       </a>
-       <h2>
-        About the Journal
-       </h2>
-       <p>
-       World Journal of High School Students (WJHSS) is an international, peer-reviewed, interdisciplinary journal dedicated to showcasing outstanding research, creative thinking, and innovative projects conducted by high school students around the world. The mission of the journal is to provide a global platform for young scholars to share their academic and intellectual achievements across a wide range of disciplines. WJHSS welcomes submissions from all subject areas including science, technology, engineering, mathematics, humanities, social sciences, and the arts. The journal aims to inspire academic excellence and foster early research experiences among pre-university students. The journal is a Gold Open Access journal, and all articles are freely available to online readers without any subscription or access fees.
-       </p>
-      </section>
-      <section class="current_issue">
-       <a id="homepageIssue">
-       </a>
-       <h2>
-        Current Issue
-       </h2>
-       
-       <div class="obj_issue_toc">
-        <div class="heading">
-         <div class="cover">
-          <img alt="					
-				" src="image/text.jpg"/>
-         </div>
-         <div class="description">
-         </div>
-        </div>
-        <div class="section">
-  <h3>
-    Proposal Articles
-  </h3>
-  <ul class="cmp_article_list articles" style="list-style: none; padding: 0;">
-    <li style="margin-bottom: 12px;">
-      <div style="line-height: 1.3; margin: 0;">
-        <a href="#">Exploring the Relationship Between Screen Time and Sleep Quality in Teenagers</a>
-      </div>
-      <div style="line-height: 1.3; margin: 0; font-size: 0.9em;">
-        Authors: Emily Zhang, Ryan Thompson, Aisha Patel
-      </div>
-    </li>
-    <li style="margin-bottom: 12px;">
-      <div style="line-height: 1.3; margin: 0;">
-        <a href="#">Design and Testing of a Low-Cost Water Purification System Using Activated Charcoal</a>
-      </div>
-      <div style="line-height: 1.3; margin: 0; font-size: 0.9em;">
-        Authors: Aditya Mehra, Fatima Noor
-      </div>
-    </li>
-    <li style="margin-bottom: 12px;">
-      <div style="line-height: 1.3; margin: 0;">
-        <a href="#">Using Machine Learning to Predict Student Academic Performance Based on Study Habits</a>
-      </div>
-      <div style="line-height: 1.3; margin: 0; font-size: 0.9em;">
-        Authors: Sophia Martínez, Ethan Nguyen, Arjun Sharma, Julia Li
-      </div>
-    </li>
-    <li style="margin-bottom: 12px;">
-      <div style="line-height: 1.3; margin: 0;">
-        <a href="#">The Impact of Music Genres on Concentration While Studying: A Cognitive Study</a>
-      </div>
-      <div style="line-height: 1.3; margin: 0; font-size: 0.9em;">
-        Authors: Joshua Kim, Mia González
-      </div>
-    </li>
-    <li style="margin-bottom: 12px;">
-      <div style="line-height: 1.3; margin: 0;">
-        <a href="#">Development of a Smartphone App to Promote Mental Well-being in Adolescents</a>
-      </div>
-      <div style="line-height: 1.3; margin: 0; font-size: 0.9em;">
-        Authors: Ahmed El-Masry, Grace Chen, Isabella Romero
-      </div>
-    </li>
-    <li style="margin-bottom: 12px;">
-      <div style="line-height: 1.3; margin: 0;">
-        <a href="#">Mathematical Modeling of the Spread of Infectious Diseases in School Environments</a>
-      </div>
-      <div style="line-height: 1.3; margin: 0; font-size: 0.9em;">
-        Authors: Hannah Müller, Jacob Anderson, Priya Das, Leo Nakamura
-      </div>
-    </li>
-    <li style="margin-bottom: 12px;">
-      <div style="line-height: 1.3; margin: 0;">
-        <a href="#">Investigating Gender Bias in Artificial Intelligence Image Generators</a>
-      </div>
-      <div style="line-height: 1.3; margin: 0; font-size: 0.9em;">
-        Authors: Lily Chen, Sofia Novak, Omar Hassan, Ava Thompson
-      </div>
-    </li>
-    <li style="margin-bottom: 12px;">
-      <div style="line-height: 1.3; margin: 0;">
-        <a href="#">The Psychological Effects of Climate Change Awareness on Teenagers</a>
-      </div>
-      <div style="line-height: 1.3; margin: 0; font-size: 0.9em;">
-        Authors: Lucas Johnson, Naomi Park, Rafael Mendes, Emily Liu
-      </div>
-    </li>
-  </ul>
-</div>
-        <!-- .sections -->
-       </div>
-       <a class="read_more" href="https://ojs.bonviewpress.com/index.php/JCCE/issue/archive">
-        View All Issues
-       </a>
-      </section>
-     </div>
-     <!-- .page -->
-    </div>
-    <!-- pkp_structure_main -->
-    <div class="pkp_structure_sidebar left" role="complementary">
-     <div class="pkp_block block_custom" id="customblock-right_links">
-      <h2 class="title">
-       Journal Information
-      </h2>
-      <div class="content">
-       <div class="journalcard__metrics border">
-        <div class="journalcard__metrics border">
-  <span class="sc-hwwEjo cdchLr">
-    <strong>
-      Editor-in-Chief:
-    </strong>
-    <span class="jgG6ef">
-      Fei-Yue Wang
-    </span>
-  </span>
-</div>
-
-<div class="journalcard__metrics border">
-  <span class="sc-hwwEjo cdchLr">
-    <strong>
-      Associate Editors:
-    </strong>
-    XXX
-  </span>
-</div>
-
-<div class="journalcard__metrics border">
-  <span class="sc-hwwEjo cdchLr">
-    <strong>
-      Frequency:
-    </strong>
-    Quarterly
-  </span>
-</div>
-
-<div class="journalcard__metrics border">
-  <span class="sc-hwwEjo cdchLr">
-    <strong>
-      Publisher:
-    </strong>
-    XXX
-  </span>
-</div>
-
-<div class="journalcard__metrics border">
-  <span class="sc-hwwEjo cdchLr">
-    <strong>
-      Launch Year:
-    </strong>
-    2025
-  </span>
-</div>
-
-<div class="journalcard__metrics border">
-  <span class="sc-hwwEjo cdchLr">
-    <strong>
-      Submission to First Decision:
-    </strong>
-    30&nbsp;days
-    <br/>
-    <strong>
-      Submission to Acceptance:
-    </strong>
-    131
-    <span class="sc-kPVwWT hZDpyF">
-      days
-    </span>
-    <br/>
-    <strong>
-      Accept to Publish:
-    </strong>
-    30
-    <span class="sc-kPVwWT hZDpyF">
-      days
-    </span>
-  </span>
-</div>
-        
-        
-       </div>
-       <div class="journalcard__metrics border">
-        <p class="journalcard__metrics border">
-         © 2025 Bon View Publishing Pte Ltd.
-        </p>
-       </div>
-      </div>
-     </div>
-     <div class="pkp_block block_custom" id="customblock-cimago-journal">
-      <h2 class="title pkp_screen_reader">
-       CImago Journal
-      </h2>
-      <div class="content">
-       <p>
-        <a href="https://www.scimagojr.com/journalsearch.php?q=21101208643&amp;tip=sid&amp;clean=0">
-         <img alt="SCImago Journal &amp; Country Rank" border="0" src="https://www.scimagojr.com/journal_img.php?id=21101208643"/>
+    <header class="pkp_structure_head" id="headerNavigationContainer" role="banner">
+      <nav aria-label="Jump to content links" class="cmp_skip_to_content">
+        <a href="#pkp_content_main">
+          Skip to main content
         </a>
-       </p>
-      </div>
-     </div>
-     <div class="pkp_block block_make_submission">
-      <h2 class="pkp_screen_reader">
-       Make a Submission
-      </h2>
-      <div class="content">
-       <a class="block_make_submission_link" href="https://ojs.bonviewpress.com/index.php/JCCE/about/submissions">
-        Make a Submission
-       </a>
-      </div>
-     </div>
-     <style type="text/css">
-      .block_announcements_article:not(:last-child) {
-			padding-bottom: 1.5em;
-			border-bottom: 1px solid;
-		}
-
-		.block_announcements_article {
-			text-align: left;
-		}
-
-		.block_announcements #show-all{
-			font-style: italic;
-		}
-     </style>
-     <div class="pkp_block block_announcements">
-      <h2 class="title">
-       Announcements
-      </h2>
-      <div class="content">
-       <article class="block_announcements_article">
-        <h3 class="block_announcements_article_headline">
-         <a href="https://ojs.bonviewpress.com/index.php/JCCE/announcement/view/120">
-          CiteScore 2024 Released: 19.9
-         </a>
-        </h3>
-        <time class="block_announcements_article_date" datetime="2025-06-05">
-         <strong>
-          June 5, 2025
-         </strong>
-        </time>
-        <div class="block_announcements_article_content">
-         <p>
-          We are delighted to announce that the
-          <strong>
-           CiteScore 2024
-          </strong>
-          for the
-          <em>
-           Journal of Computational and Cognitive Engineering
-          </em>
-          is
-          <strong>
-           19.9
-          </strong>
-          , which ranks it 5 out of 264 journals in the Engineering (miscellaneous) category and 27 out of 947 journals in the Computer Science Applications category.
-          <br/>
-          <br/>
-          This achievement reflects the dedication and hard work of our editorial team, authors, and reviewers. We are immensely grateful for the valuable contributions and unwavering support from our community. This milestone not only highlights the quality of research we publish but also sets a higher standard for our future endeavors.
-          <br/>
-          <br/>
-          Thank you to everyone who has been a part of this journey. We look forward to continuing to provide cutting-edge research and making significant impacts in our field.
-         </p>
+        <a href="#siteNav">
+          Skip to main navigation menu
+        </a>
+        <a href="#homepageAbout">
+          Skip to about the journal
+        </a>
+        <a href="#homepageIssue">
+          Skip to the current issue
+        </a>
+        <a href="#pkp_content_footer">
+          Skip to site footer
+        </a>
+      </nav>
+      <div class="pkp_head_wrapper">
+        <div class="pkp_site_name_wrapper">
+          <button class="pkp_site_nav_toggle">
+            <span>
+              Open Menu
+            </span>
+          </button>
+          <h1 class="pkp_screen_reader">
+            World Journal of Young and Excellent Scholars
+          </h1>
+          <div class="pkp_site_name">
+            <a class="is_text" href="						https://wan300.github.io/WJYES/
+					">
+              World Journal of Young and Excellent Scholars
+            </a>
+          </div>
         </div>
-       </article>
-       <article class="block_announcements_article">
-        <h3 class="block_announcements_article_headline">
-         <a href="https://ojs.bonviewpress.com/index.php/JCCE/announcement/view/79">
-          JCCE Published Volume 3, Issue 2 on May 21, 2024
-         </a>
-        </h3>
-        <time class="block_announcements_article_date" datetime="2024-05-21">
-         <strong>
-          May 21, 2024
-         </strong>
-        </time>
-        <div class="block_announcements_article_content">
-         <p>
-          We are excited to announce that
-          <em>
-           <strong>
-            Journal of Computational and Cognitive Engineering (JCCE)
-           </strong>
-          </em>
-          published Volume 3 Issue 2 on May 21, 2024.
-         </p>
-        </div>
-       </article>
-       <article class="block_announcements_article">
-        <h3 class="block_announcements_article_headline">
-         <a href="https://ojs.bonviewpress.com/index.php/JCCE/announcement/view/71">
-          STM Membership Announcement
-         </a>
-        </h3>
-        <time class="block_announcements_article_date" datetime="2024-04-24">
-         <strong>
-          April 24, 2024
-         </strong>
-        </time>
-        <div class="block_announcements_article_content">
-         <p>
-          Bon View Publishing Pte. Ltd. proudly announces its membership in the esteemed
-          <a href="https://www.stm-assoc.org/">
-           <u>
-            International Association of Scientific, Technical and Medical Publishers(STM)
-           </u>
+        <nav aria-label="Site Navigation" class="pkp_site_nav_menu">
+          <a id="siteNav">
           </a>
-          , effective 2024. This collaboration marks a significant milestone in advancing global knowledge exchange and promoting cutting-edge research.
-         </p>
+
+
+        </nav>
+      </div>
+      <!-- .pkp_head_wrapper -->
+    </header>
+    <!-- .pkp_structure_head -->
+    <div class="pkp_structure_content has_sidebar">
+      <div class="pkp_structure_main" role="main">
+        <a id="pkp_content_main">
+        </a>
+        <div class="page_index_journal">
+          <!-- 在这里插入图片 -->
+<img src="image/image01.png" alt="Journal Banner" style="width: 100%; height: auto; margin-bottom: 20px;">
+          <section class="homepage_about">
+            <a id="homepageAbout">
+            </a>
+            <h2>
+              About the Journal
+            </h2>
+            <p>
+              World Journal of Young and Excellent Scholars（WJYES）is an international, peer-reviewed, interdisciplinary
+              journal dedicated to showcasing outstanding research, creative thinking, and innovative projects conducted
+              by high school students around the world. The mission of the journal is to provide a global platform for
+              young scholars to share their academic and intellectual achievements across a wide range of disciplines.
+              WJYES welcomes submissions from all subject areas including science, technology, engineering, mathematics,
+              humanities, social sciences, and the arts. The journal aims to inspire academic excellence and foster
+              early research experiences among pre-university students. The journal is a Gold Open Access journal, and
+              all articles are freely available to online readers without any subscription or access fees.
+            </p>
+          </section>
+          <section class="current_issue">
+            <a id="homepageIssue">
+            </a>
+            <h2>
+              Current Issue
+            </h2>
+
+            <div class="obj_issue_toc">
+              <div class="heading">
+                <div class="cover">
+                  <img alt="					
+				" src="image/text.jpg" />
+                </div>
+                <div class="description">
+                </div>
+              </div>
+              <div class="section">
+                <h3>
+                  Proposal Articles
+                </h3>
+                <ul class="cmp_article_list articles" style="list-style: none; padding: 0;">
+                  <li style="margin-bottom: 12px;">
+                    <div style="line-height: 1.3; margin: 0;">
+                      <a href="#">Exploring the Relationship Between Screen Time and Sleep Quality in Teenagers</a>
+                    </div>
+                    <div style="line-height: 1.3; margin: 0; font-size: 0.9em;">
+                      Authors: Emily Zhang, Ryan Thompson, Aisha Patel
+                    </div>
+                  </li>
+                  <li style="margin-bottom: 12px;">
+                    <div style="line-height: 1.3; margin: 0;">
+                      <a href="#">Design and Testing of a Low-Cost Water Purification System Using Activated
+                        Charcoal</a>
+                    </div>
+                    <div style="line-height: 1.3; margin: 0; font-size: 0.9em;">
+                      Authors: Aditya Mehra, Fatima Noor
+                    </div>
+                  </li>
+                  <li style="margin-bottom: 12px;">
+                    <div style="line-height: 1.3; margin: 0;">
+                      <a href="#">Using Machine Learning to Predict Student Academic Performance Based on Study
+                        Habits</a>
+                    </div>
+                    <div style="line-height: 1.3; margin: 0; font-size: 0.9em;">
+                      Authors: Sophia Martínez, Ethan Nguyen, Arjun Sharma, Julia Li
+                    </div>
+                  </li>
+                  <li style="margin-bottom: 12px;">
+                    <div style="line-height: 1.3; margin: 0;">
+                      <a href="#">The Impact of Music Genres on Concentration While Studying: A Cognitive Study</a>
+                    </div>
+                    <div style="line-height: 1.3; margin: 0; font-size: 0.9em;">
+                      Authors: Joshua Kim, Mia González
+                    </div>
+                  </li>
+                  <li style="margin-bottom: 12px;">
+                    <div style="line-height: 1.3; margin: 0;">
+                      <a href="#">Development of a Smartphone App to Promote Mental Well-being in Adolescents</a>
+                    </div>
+                    <div style="line-height: 1.3; margin: 0; font-size: 0.9em;">
+                      Authors: Ahmed El-Masry, Grace Chen, Isabella Romero
+                    </div>
+                  </li>
+                  <li style="margin-bottom: 12px;">
+                    <div style="line-height: 1.3; margin: 0;">
+                      <a href="#">Mathematical Modeling of the Spread of Infectious Diseases in School Environments</a>
+                    </div>
+                    <div style="line-height: 1.3; margin: 0; font-size: 0.9em;">
+                      Authors: Hannah Müller, Jacob Anderson, Priya Das, Leo Nakamura
+                    </div>
+                  </li>
+                  <li style="margin-bottom: 12px;">
+                    <div style="line-height: 1.3; margin: 0;">
+                      <a href="#">Investigating Gender Bias in Artificial Intelligence Image Generators</a>
+                    </div>
+                    <div style="line-height: 1.3; margin: 0; font-size: 0.9em;">
+                      Authors: Lily Chen, Sofia Novak, Omar Hassan, Ava Thompson
+                    </div>
+                  </li>
+                  <li style="margin-bottom: 12px;">
+                    <div style="line-height: 1.3; margin: 0;">
+                      <a href="#">The Psychological Effects of Climate Change Awareness on Teenagers</a>
+                    </div>
+                    <div style="line-height: 1.3; margin: 0; font-size: 0.9em;">
+                      Authors: Lucas Johnson, Naomi Park, Rafael Mendes, Emily Liu
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- .sections -->
+            </div>
+            <a class="read_more">
+              View All Issues
+            </a>
+          </section>
         </div>
-       </article>
-       <a href="https://ojs.bonviewpress.com/index.php/JCCE/announcement" id="show-all">
-        Show all announcements ...
-       </a>
+        <!-- .page -->
       </div>
-     </div>
-     <div class="pkp_block block_keyword_cloud">
-      <h2 class="title">
-       Keywords
-      </h2>
-      <div class="content" id="wordcloud">
-      </div>
-      <script>
-       function randomColor() {
-            var cores = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf'];
-            return cores[Math.floor(Math.random()*cores.length)];
-        }
+      <!-- pkp_structure_main -->
+      <div class="pkp_structure_sidebar left" role="complementary">
+        <div class="pkp_block block_custom" id="customblock-right_links">
+          <h2 class="title">
+            Journal Information
+          </h2>
+          <div class="content">
+            <div class="journalcard__metrics border">
+              <div class="journalcard__metrics border">
+                <span class="sc-hwwEjo cdchLr">
+                  <strong>
+                    Editor-in-Chief:
+                  </strong>
+                  <span class="jgG6ef">
+                    Fei-Yue Wang
+                  </span>
+                </span>
+              </div>
 
-                    document.addEventListener("DOMContentLoaded", function() {
-                var keywords = [{"text":"intelligent manufacturing","size":1},{"text":"optimization","size":1},{"text":"power transformers","size":1},{"text":"supply chain management techniques","size":1},{"text":"decentralized big data auditing","size":1},{"text":"blockchain","size":1},{"text":"key optimization","size":1},{"text":"divide and conquer table","size":1},{"text":"adaptive ei-gamal","size":1},{"text":"enhanced predator success rate of gazelle optimization","size":1},{"text":"malware","size":1},{"text":"gray wolf optimization","size":1},{"text":" machine learning","size":1},{"text":"feature selection","size":1},{"text":"random forest","size":1},{"text":"6tisch","size":1},{"text":"6top","size":1},{"text":"distributed algorithm","size":1},{"text":"directional antennas","size":1},{"text":"software fault prediction (sfp)","size":1},{"text":"sustainable software development (ssd)","size":1},{"text":"atomic orbital search (aos)","size":1},{"text":"feature selection (fs)","size":1},{"text":"area under the receiver operating characteristic (roc) curve (auc)","size":1},{"text":"sustainable development goal 12 (sdg 12)","size":1},{"text":"urban ecosystem","size":1},{"text":"city planner","size":1},{"text":"deep learning","size":1},{"text":"vgg-16","size":1},{"text":"landuse landcover change detection","size":1},{"text":"remote sensing","size":1},{"text":"multi-spectral analysis","size":1},{"text":"diabetic retinopathy (dr)","size":1},{"text":"early-stage diabetic","size":1},{"text":"deep learning (dl)","size":1},{"text":"full-field optical coherence tomography (ff-oct)","size":1},{"text":"feature pyramid networks (fpns)","size":1},{"text":"spatial pyramid pooling","size":1},{"text":"autism spectrum disorder","size":1},{"text":"machine learning","size":1},{"text":"supervised and unsupervised learning","size":1},{"text":"fuzzy logic","size":1},{"text":"information security risk assessment","size":1},{"text":"cybersecurity","size":1},{"text":"expert systems","size":1},{"text":"decision-making","size":1},{"text":"risk management","size":1},{"text":"url defacement","size":1},{"text":"particle swarm optimization (pso)","size":1},{"text":"iscx-url-2016 dataset","size":1}];
-                var totalWeight = 0;
-                var blockWidth = 300;
-                var blockHeight = 200;
-                var transitionDuration = 200;
-                var length_keywords = keywords.length;
-                var layout = d3.layout.cloud();
+              <div class="journalcard__metrics border">
+                <span class="sc-hwwEjo cdchLr">
+                  <strong>
+                    Associate Editors:
+                  </strong>
+                  XXX
+                </span>
+              </div>
 
-                layout.size([blockWidth, blockHeight])
-                    .words(keywords)
-                    .fontSize(function(d)
-                    {
-                        return fontSize(+d.size);
-                    })
-                    .on('end', draw);
+              <div class="journalcard__metrics border">
+                <span class="sc-hwwEjo cdchLr">
+                  <strong>
+                    Frequency:
+                  </strong>
+                  Quarterly
+                </span>
+              </div>
 
-                var svg = d3.select("#wordcloud").append("svg")
-                    .attr("viewBox", "0 0 " + blockWidth + " " + blockHeight)
-                    .attr("width", '100%');
+              <div class="journalcard__metrics border">
+                <span class="sc-hwwEjo cdchLr">
+                  <strong>
+                    Publisher:
+                  </strong>
+                  AGIST
+                </span>
+              </div>
 
-                function update() {
-                    var words = layout.words();
-                    fontSize = d3.scaleLinear().range([16, 34]);
-                    if (words.length) {
-                        fontSize.domain([+words[words.length - 1].size || 1, +words[0].size]);
-                    }
+              <div class="journalcard__metrics border">
+                <span class="sc-hwwEjo cdchLr">
+                  <strong>
+                    Launch Year:
+                  </strong>
+                  2025
+                </span>
+              </div>
+
+              <div class="journalcard__metrics border">
+                <span class="sc-hwwEjo cdchLr">
+                  <strong>
+                    Submission to First Decision:
+                  </strong>
+                  30&nbsp;days
+                  <br />
+                  <strong>
+                    Submission to Acceptance:
+                  </strong>
+                  131
+                  <span class="sc-kPVwWT hZDpyF">
+                    days
+                  </span>
+                  <br />
+                  <strong>
+                    Accept to Publish:
+                  </strong>
+                  30
+                  <span class="sc-kPVwWT hZDpyF">
+                    days
+                  </span>
+                </span>
+              </div>
+
+
+            </div>
+            <div class="journalcard__metrics border">
+              <p class="journalcard__metrics border">
+                © 2025 AGIST Publishing. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="pkp_block block_custom" id="customblock-cimago-journal">
+          <h2 class="title pkp_screen_reader">
+            CImago Journal
+          </h2>
+          <div class="content">
+                <p>
+                      <img alt="SCImago Journal &amp; Country Rank" border="0" src="image/WJYES01.png" />
+                  </p>
+          </div>
+        </div>
+        <div class="pkp_block block_make_submission">
+          <h2 class="pkp_screen_reader">
+            Make a Submission
+          </h2>
+          <div class="content">
+            <a class="block_make_submission_link">
+              Make a Submission
+            </a>
+          </div>
+        </div>
+        <style type="text/css">
+          .block_announcements_article:not(:last-child) {
+            padding-bottom: 1.5em;
+            border-bottom: 1px solid;
+          }
+
+          .block_announcements_article {
+            text-align: left;
+          }
+
+          .block_announcements #show-all {
+            font-style: italic;
+          }
+        </style>
+        <div class="pkp_block block_announcements">
+          <h2 class="title">
+            Announcements
+          </h2>
+          <div class="content">
+            <article class="block_announcements_article">
+              <h3 class="block_announcements_article_headline">
+                <a href="#">
+                  Welcome submissions from young scholars！
+                </a>
+              </h3>
+              <time class="block_announcements_article_date" datetime="2025-06-05">
+                <strong>
+                  June 5, 2025
+                </strong>
+              </time>
+              <div class="block_announcements_article_content">
+                <p>
+                  We warmly welcome submissions from high school students across the globe, regardless of background or
+                  location. WJYES is open to all disciplines—including science, technology, engineering, mathematics—and
+                  actively encourages cross-disciplinary insights, experimental approaches, and novel methodologies.
+                </p>
+                <p>
+                  Our mission is not only to publish exceptional student work, but also to ignite a lifelong passion for
+                  discovery, academic rigor, and scholarly communication. By engaging students in real-world publishing
+                  experiences early in their academic journey, we aim to cultivate the next generation of researchers,
+                  innovators, and thought leaders.
+                </p>
+                <p>
+                  WJYES is an Open Access journal. All articles are freely available online, with no subscription,
+                  access fees, or paywalls—ensuring global visibility and impact for every published work.
+                </p>
+                <p>
+                  Whether you're conducting experiments in a lab, analyzing literature or tackling social issues through
+                  research, WJYES is your stage to be heard on a global scale. We invite you to contribute, collaborate,
+                  and inspire.
+                </p>
+              </div>
+            </article>
+            <a href="#" id="show-all">
+              Show all announcements ...
+            </a>
+          </div>
+        </div>
+        <div class="pkp_block block_keyword_cloud">
+          <h2 class="title">
+            Keywords
+          </h2>
+          <div class="content" id="wordcloud">
+          </div>
+          <script>
+            function randomColor() {
+              var cores = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf'];
+              return cores[Math.floor(Math.random() * cores.length)];
+            }
+
+            document.addEventListener("DOMContentLoaded", function () {
+              var keywords = [{ "text": "teenagers", "size": 1 }, { "text": "machine learning", "size": 1 }, { "text": "academic", "size": 1 }, { "text": "mathematical", "size": 1 }, { "text": "Artificial intelligence", "size": 1 }];
+              var totalWeight = 0;
+              var blockWidth = 300;
+              var blockHeight = 200;
+              var transitionDuration = 200;
+              var length_keywords = keywords.length;
+              var layout = d3.layout.cloud();
+
+              layout.size([blockWidth, blockHeight])
+                .words(keywords)
+                .fontSize(function (d) {
+                  return fontSize(+d.size);
+                })
+                .on('end', draw);
+
+              var svg = d3.select("#wordcloud").append("svg")
+                .attr("viewBox", "0 0 " + blockWidth + " " + blockHeight)
+                .attr("width", '100%');
+
+              function update() {
+                var words = layout.words();
+                fontSize = d3.scaleLinear().range([16, 34]);
+                if (words.length) {
+                  fontSize.domain([+words[words.length - 1].size || 1, +words[0].size]);
                 }
+              }
 
-                keywords.forEach(function(item,index){totalWeight += item.size;});
+              keywords.forEach(function (item, index) { totalWeight += item.size; });
 
-                update();
+              update();
 
-                function draw(words, bounds) {
-                    var width = layout.size()[0],
-                        height = layout.size()[1];
+              function draw(words, bounds) {
+                var width = layout.size()[0],
+                  height = layout.size()[1];
 
-                    scaling = bounds
-                        ? Math.min(
-                            width / Math.abs(bounds[1].x - width / 2),
-                            width / Math.abs(bounds[0].x - width / 2),
-                            height / Math.abs(bounds[1].y - height / 2),
-                            height / Math.abs(bounds[0].y - height / 2),
-                        ) / 2
-                        : 1;
+                scaling = bounds
+                  ? Math.min(
+                    width / Math.abs(bounds[1].x - width / 2),
+                    width / Math.abs(bounds[0].x - width / 2),
+                    height / Math.abs(bounds[1].y - height / 2),
+                    height / Math.abs(bounds[0].y - height / 2),
+                  ) / 2
+                  : 1;
 
-                    svg
-                    .append("g")
-                    .attr(
-                        "transform",
-                        "translate(" + [width >> 1, height >> 1] + ")scale(" + scaling + ")",
-                    )
-                    .selectAll("text")
-                        .data(words)
-                    .enter().append("text")
-                        .style("font-size", function(d) { return d.size + "px"; })
-                        .style("font-family", 'serif')
-                        .style("fill", randomColor)
-                        .style('cursor', 'pointer')
-                        .style('opacity', 0.7)
-                        .attr('class', 'keyword')
-                        .attr("text-anchor", "middle")
-                        .attr("transform", function(d) {
-                            return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
-                        })
-                        .text(function(d) { return d.text; })
-                        .on("click", function(d, i){
-                            window.location = "https://ojs.bonviewpress.com/index.php/index/search?query=QUERY_SLUG".replace(/QUERY_SLUG/, encodeURIComponent(''+d.text+''));
-                        })
-                        .on("mouseover", function(d, i) {
-                            d3.select(this).transition()
-                                .duration(transitionDuration)
-                                .style('font-size',function(d) { return (d.size + 3) + "px"; })
-                                .style('opacity', 1);
-                        })
-                        .on("mouseout", function(d, i) {
-                            d3.select(this).transition()
-                                .duration(transitionDuration)
-                                .style('font-size',function(d) { return d.size + "px"; })
-                                .style('opacity', 0.7);
-                        })
-                        .on('resize', function() { update() });
-                }
+                svg
+                  .append("g")
+                  .attr(
+                    "transform",
+                    "translate(" + [width >> 1, height >> 1] + ")scale(" + scaling + ")",
+                  )
+                  .selectAll("text")
+                  .data(words)
+                  .enter().append("text")
+                  .style("font-size", function (d) { return d.size + "px"; })
+                  .style("font-family", 'serif')
+                  .style("fill", randomColor)
+                  .style('cursor', 'default') // 将鼠标样式改为默认
+                  .attr('class', 'keyword')
+                  .attr("text-anchor", "middle")
+                  .attr("transform", function (d) {
+                    return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                  })
+                  .text(function (d) { return d.text; })
+                  // .on("click"...) 函数已被完全移除
+                  .on("mouseover", function (d, i) {
+                    d3.select(this).transition()
+                      .duration(transitionDuration)
+                      .style('font-size', function (d) { return (d.size + 3) + "px"; })
+                      .style('opacity', 1);
+                  })
+                  .on("mouseout", function (d, i) {
+                    d3.select(this).transition()
+                      .duration(transitionDuration)
+                      .style('font-size', function (d) { return d.size + "px"; })
+                      .style('opacity', 0.7);
+                  })
+                  .on('resize', function () { update() });
+              }
 
-                layout.start();
+              layout.start();
             });
-      </script>
-     </div>
-     <div class="pkp_block block_developed_by">
-      <div class="content">
-       <span class="title">
-        Most Read
-       </span>
-       <ul class="most_read">
-        <li class="most_read_article">
-         <div class="most_read_article_title">
-          <a href="https://ojs.bonviewpress.com/index.php/JCCE/article/view/1062">
-           Assessment of Machine Learning Techniques and Traffic Flow: A Qualitative and Quantitative Analysis
-          </a>
-         </div>
-         <div class="most_read_article_journal">
-          <span class="fa fa-eye">
-          </span>
-          4020
-         </div>
-        </li>
-        <li class="most_read_article">
-         <div class="most_read_article_title">
-          <a href="https://ojs.bonviewpress.com/index.php/JCCE/article/view/174">
-           Implementation of Artificial Intelligence in Agriculture
-          </a>
-         </div>
-         <div class="most_read_article_journal">
-          <span class="fa fa-eye">
-          </span>
-          3090
-         </div>
-        </li>
-        <li class="most_read_article">
-         <div class="most_read_article_title">
-          <a href="https://ojs.bonviewpress.com/index.php/JCCE/article/view/803">
-           Implementation of Artificial Intelligence in Aquaculture and Fisheries: Deep Learning, Machine Vision, Big Data, Internet of Things, Robots and Beyond
-          </a>
-         </div>
-         <div class="most_read_article_journal">
-          <span class="fa fa-eye">
-          </span>
-          1566
-         </div>
-        </li>
-        <li class="most_read_article">
-         <div class="most_read_article_title">
-          <a href="https://ojs.bonviewpress.com/index.php/JCCE/article/view/838">
-           Comparing BERT Against Traditional Machine Learning Models in Text Classification
-          </a>
-         </div>
-         <div class="most_read_article_journal">
-          <span class="fa fa-eye">
-          </span>
-          1507
-         </div>
-        </li>
-        <li class="most_read_article">
-         <div class="most_read_article_title">
-          <a href="https://ojs.bonviewpress.com/index.php/JCCE/article/view/3414">
-           Revolutionizing Autism Education: Harnessing AI for Tailored Skill Development in Social, Emotional, and Independent Learning Domains
-          </a>
-         </div>
-         <div class="most_read_article_journal">
-          <span class="fa fa-eye">
-          </span>
-          1453
-         </div>
-        </li>
-       </ul>
+          </script>
+        </div>
+        <div class="pkp_block block_developed_by">
+          <div class="content">
+            <span class="title">
+              Most Read
+            </span>
+
+          </div>
+        </div>
       </div>
-     </div>
+      <!-- pkp_sidebar.left -->
     </div>
-    <!-- pkp_sidebar.left -->
-   </div>
-   <!-- pkp_structure_content -->
-   <div class="pkp_structure_footer_wrapper" role="contentinfo">
-    <a id="pkp_content_footer">
-    </a>
-    <div class="pkp_structure_footer">
-     <div class="pkp_footer_content">
-      <p>
-       <a href="http://creativecommons.org/licenses/by/4.0/">
-        <img alt="" height="31" src="https://ojs.bonviewpress.com/public/site/images/admin/88x31.png" width="88"/>
-       </a>
-       All site content, except where otherwise noted, is licensed under a
-       <a href="http://creativecommons.org/licenses/by/4.0/">
-        Creative Commons Attribution 4.0 International License
-       </a>
-       .
-      </p>
-      <p>
-       pISSN 2810-9570, eISSN 2810-9503 | Published by
-       <a href="http://www.bonviewpress.com/">
-        Bon View Publishing Pte Ltd.
-       </a>
-      </p>
-      <p>
-       <strong>
-        Member of
-       </strong>
-      </p>
-      <p>
-       <img src="https://bonview.oss-ap-southeast-1.aliyuncs.com/resource/ojs-logo-quanji.png" style="width: 997px; height: 62px;">
-       </img>
-      </p>
-     </div>
-     <div class="pkp_brand_footer">
-      <a href="https://ojs.bonviewpress.com/index.php/JCCE/about/aboutThisPublishingSystem">
-       <img alt="More information about the publishing system, Platform and Workflow by OJS/PKP." src="https://ojs.bonviewpress.com/templates/images/ojs_brand.png"/>
-      </a>
-     </div>
+    <!-- pkp_structure_content -->
+    <!-- START: 最终页脚代码 -->
+    <div class="pkp_structure_footer_wrapper" role="contentinfo">
+      <a id="pkp_content_footer"></a>
+      <div class="pkp_structure_footer">
+        <div class="pkp_footer_content"
+          style="padding: 20px 15px; border-top: 1px solid #ddd; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; width: 100%; font-family: sans-serif; font-size: 14px; color: #444; line-height: 1.6;">
+
+          <!-- 左侧区域: LOGO -->
+          <div style="display: flex; align-items: center; margin-right: 30px; margin-bottom: 15px;">
+            <!-- AGIST Logo: 请确保路径正确 -->
+            <img src="image/AGIST.png" alt="AGIST Logo" style="height: 35px; margin-right: 15px;">
+            <a href="https://orcid.org" target="_blank" rel="noopener noreferrer">
+              <!-- ORCID Logo: 使用您本地的图片 -->
+              <img src="image/orcid.png" alt="ORCID Logo" style="height: 35px;">
+            </a>
+          </div>
+
+          <!-- 中间区域: 联系信息 -->
+          <div style="flex-grow: 1; min-width: 250px; margin-right: 30px; margin-bottom: 15px;">
+            <p style="margin: 0 0 5px 0;"><strong>AGIST</strong></p>
+            <p style="margin: 0 0 5px 0;">1900 Camden Ave, San Jose, CA, 95124 US</p>
+            <p style="margin: 0 0 5px 0;">E-mail: <a href="mailto:info@agist.org"
+                style="color: #007bff; text-decoration: none;">info@agist.org</a></p>
+            <p style="margin: 0;">Phone: <a href="tel:+1-732-543-6103"
+                style="color: #007bff; text-decoration: none;">732-543-6103</a></p>
+          </div>
+
+          <!-- 右侧区域: 链接 -->
+          <div style="min-width: 200px; text-align: right; margin-bottom: 15px;">
+            <p style="margin: 0 0 5px 0;"><a href="/privacy" style="color: #007bff; text-decoration: none;">Privacy
+                Policy</a></p>
+            <p style="margin: 0;"><a href="https://pkp.sfu.ca/ojs/" target="_blank" rel="noopener noreferrer"
+                style="color: #007bff; text-decoration: none;">Powered by Open Journal Systems</a></p>
+          </div>
+
+        </div>
+      </div>
     </div>
-   </div>
-   <!-- pkp_structure_footer_wrapper -->
+    <!-- END: 最终页脚代码 -->
+    <!-- pkp_structure_footer_wrapper -->
   </div>
   <!-- pkp_structure_page -->
-  <script src="https://ojs.bonviewpress.com/lib/pkp/lib/vendor/components/jquery/jquery.min.js?v=3.4.0.7" type="text/javascript">
-  </script>
-  <script src="https://ojs.bonviewpress.com/lib/pkp/lib/vendor/components/jqueryui/jquery-ui.min.js?v=3.4.0.7" type="text/javascript">
-  </script>
-  <script src="https://ojs.bonviewpress.com/plugins/themes/default/js/lib/popper/popper.js?v=3.4.0.7" type="text/javascript">
-  </script>
-  <script src="https://ojs.bonviewpress.com/plugins/themes/default/js/lib/bootstrap/util.js?v=3.4.0.7" type="text/javascript">
-  </script>
-  <script src="https://ojs.bonviewpress.com/plugins/themes/default/js/lib/bootstrap/dropdown.js?v=3.4.0.7" type="text/javascript">
-  </script>
+  <script src="https://ojs.bonviewpress.com/lib/pkp/lib/vendor/components/jquery/jquery.min.js?v=3.4.0.7"
+    type="text/javascript">
+    </script>
+  <script src="https://ojs.bonviewpress.com/lib/pkp/lib/vendor/components/jqueryui/jquery-ui.min.js?v=3.4.0.7"
+    type="text/javascript">
+    </script>
+  <script src="https://ojs.bonviewpress.com/plugins/themes/default/js/lib/popper/popper.js?v=3.4.0.7"
+    type="text/javascript">
+    </script>
+  <script src="https://ojs.bonviewpress.com/plugins/themes/default/js/lib/bootstrap/util.js?v=3.4.0.7"
+    type="text/javascript">
+    </script>
+  <script src="https://ojs.bonviewpress.com/plugins/themes/default/js/lib/bootstrap/dropdown.js?v=3.4.0.7"
+    type="text/javascript">
+    </script>
   <script src="https://ojs.bonviewpress.com/plugins/themes/default/js/main.js?v=3.4.0.7" type="text/javascript">
   </script>
   <script src="https://d3js.org/d3.v4.js?v=3.4.0.7" type="text/javascript">
   </script>
-  <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js?v=3.4.0.7" type="text/javascript">
-  </script>
+  <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js?v=3.4.0.7"
+    type="text/javascript">
+    </script>
   <script type="text/javascript">
-   (function (w, d, s, l, i) { w[l] = w[l] || []; var f = d.getElementsByTagName(s)[0],
-j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true;
-j.src = 'https://www.googletagmanager.com/gtag/js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-function gtag(){dataLayer.push(arguments)}; gtag('js', new Date()); gtag('config', i); })
-(window, document, 'script', 'dataLayer', 'UA-284252596-1');
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || []; var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtag/js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      function gtag() { dataLayer.push(arguments) }; gtag('js', new Date()); gtag('config', i);
+    })
+      (window, document, 'script', 'dataLayer', 'UA-284252596-1');
   </script>
- </body>
+</body>
+
 </html>
